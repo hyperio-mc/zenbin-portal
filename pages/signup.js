@@ -44,8 +44,8 @@ export default function Signup() {
   return (
     <div style={{ 
       minHeight: '100vh', 
-      background: '#0a0a0a', 
-      color: '#fff',
+      background: '#fafafa', 
+      color: '#1a1a1a',
       fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
       padding: '2rem',
       display: 'flex',
@@ -53,22 +53,22 @@ export default function Signup() {
       justifyContent: 'center'
     }}>
       <div style={{ width: '100%', maxWidth: '400px' }}>
-        <a href="/" style={{ color: '#4ecdc4', textDecoration: 'none', display: 'block', marginBottom: '2rem' }}>
+        <a href="/" style={{ color: '#0066cc', textDecoration: 'none', display: 'block', marginBottom: '2rem' }}>
           ← Back to home
         </a>
 
         <h1 style={{ fontSize: '2rem', fontWeight: '700', marginBottom: '0.5rem' }}>
           Get your API key
         </h1>
-        <p style={{ color: '#888', marginBottom: '2rem' }}>
+        <p style={{ color: '#666666', marginBottom: '2rem' }}>
           Start publishing HTML for your agents in seconds.
         </p>
 
         {error && (
           <div style={{ 
-            background: '#3d1a1a', 
-            border: '1px solid #ff6b6b',
-            color: '#ff6b6b',
+            background: '#fef2f2', 
+            border: '1px solid #ef4444',
+            color: '#dc2626',
             padding: '1rem', 
             borderRadius: '8px',
             marginBottom: '1rem'
@@ -79,7 +79,7 @@ export default function Signup() {
 
         <form onSubmit={handleSubmit}>
           <div style={{ marginBottom: '1rem' }}>
-            <label style={{ display: 'block', marginBottom: '0.5rem', color: '#888', fontSize: '0.875rem' }}>
+            <label style={{ display: 'block', marginBottom: '0.5rem', color: '#444444', fontSize: '0.875rem' }}>
               Email
             </label>
             <input
@@ -90,18 +90,19 @@ export default function Signup() {
               style={{
                 width: '100%',
                 padding: '1rem',
-                background: '#1a1a2e',
-                border: '1px solid #333',
+                background: '#ffffff',
+                border: '1px solid #cccccc',
                 borderRadius: '8px',
-                color: '#fff',
-                fontSize: '1rem'
+                color: '#1a1a1a',
+                fontSize: '1rem',
+                boxSizing: 'border-box'
               }}
               placeholder="you@example.com"
             />
           </div>
 
           <div style={{ marginBottom: '1.5rem' }}>
-            <label style={{ display: 'block', marginBottom: '0.5rem', color: '#888', fontSize: '0.875rem' }}>
+            <label style={{ display: 'block', marginBottom: '0.5rem', color: '#444444', fontSize: '0.875rem' }}>
               Password
             </label>
             <input
@@ -113,11 +114,12 @@ export default function Signup() {
               style={{
                 width: '100%',
                 padding: '1rem',
-                background: '#1a1a2e',
-                border: '1px solid #333',
+                background: '#ffffff',
+                border: '1px solid #cccccc',
                 borderRadius: '8px',
-                color: '#fff',
-                fontSize: '1rem'
+                color: '#1a1a1a',
+                fontSize: '1rem',
+                boxSizing: 'border-box'
               }}
               placeholder="••••••••"
             />
@@ -129,10 +131,10 @@ export default function Signup() {
             style={{
               width: '100%',
               padding: '1rem',
-              background: loading ? '#333' : '#4ecdc4',
+              background: loading ? '#cccccc' : '#0066cc',
               border: 'none',
               borderRadius: '8px',
-              color: loading ? '#888' : '#0a0a0a',
+              color: loading ? '#666666' : '#ffffff',
               fontSize: '1rem',
               fontWeight: '700',
               cursor: loading ? 'not-allowed' : 'pointer',
@@ -143,8 +145,8 @@ export default function Signup() {
           </button>
         </form>
 
-        <p style={{ color: '#555', fontSize: '0.875rem', marginTop: '1.5rem', textAlign: 'center' }}>
-          Already have an account? <a href="/login" style={{ color: '#4ecdc4' }}>Login</a>
+        <p style={{ color: '#888888', fontSize: '0.875rem', marginTop: '1.5rem', textAlign: 'center' }}>
+          Already have an account? <a href="/login" style={{ color: '#0066cc' }}>Login</a>
         </p>
       </div>
     </div>

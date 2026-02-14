@@ -4,44 +4,46 @@ export default function ApiKeys() {
   return (
     <div style={{ 
       minHeight: '100vh', 
-      background: '#0a0a0a', 
-      color: '#fff',
-      fontFamily: 'system-ui, sans-serif',
+      background: '#fafafa', 
+      color: '#1a1a1a',
+      fontFamily: 'system-ui, -apple-system, sans-serif',
       padding: '2rem'
     }}>
       <header style={{ marginBottom: '2rem' }}>
-        <a href="/" style={{ color: '#4ecdc4', textDecoration: 'none' }}>← Back</a>
+        <a href="/" style={{ color: '#0066cc', textDecoration: 'none' }}>← Back</a>
       </header>
 
       <h1 style={{ fontSize: '2rem', marginBottom: '2rem' }}>API Keys</h1>
 
       <div style={{ 
-        background: '#1a1a2e', 
+        background: '#ffffff', 
         borderRadius: '12px', 
         padding: '2rem',
-        maxWidth: '600px'
+        maxWidth: '600px',
+        border: '1px solid #e0e0e0'
       }}>
-        <p style={{ color: '#888', marginBottom: '1.5rem' }}>
+        <p style={{ color: '#666666', marginBottom: '1.5rem' }}>
           Your API key is used by your agents to authenticate with ZenBin.
         </p>
 
         <div style={{ marginBottom: '1rem' }}>
-          <label style={{ display: 'block', marginBottom: '0.5rem', color: '#888' }}>
+          <label style={{ display: 'block', marginBottom: '0.5rem', color: '#444444' }}>
             API Key
           </label>
           <code style={{ 
             display: 'block',
-            background: '#0a0a0a', 
+            background: '#f5f5f5', 
             padding: '1rem', 
             borderRadius: '8px',
             fontFamily: 'monospace',
-            fontSize: '0.875rem'
+            fontSize: '0.875rem',
+            border: '1px solid #e0e0e0'
           }}>
             zb_live_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
           </code>
         </div>
 
-        <p style={{ color: '#555', fontSize: '0.875rem', marginTop: '1rem' }}>
+        <p style={{ color: '#888888', fontSize: '0.875rem', marginTop: '1rem' }}>
           Keep this key secret! It gives full access to your account.
         </p>
       </div>
@@ -51,11 +53,13 @@ export default function ApiKeys() {
       </h2>
 
       <pre style={{ 
-        background: '#1a1a2e', 
+        background: '#1e1e1e', 
+        color: '#d4d4d4',
         padding: '1.5rem', 
         borderRadius: '8px',
         maxWidth: '600px',
-        overflow: 'auto'
+        overflow: 'auto',
+        border: '1px solid #e0e0e0'
       }}>
 {`# 1. Get a JWT using your API key
 curl -X POST https://zenbin.org/api/auth/token \\

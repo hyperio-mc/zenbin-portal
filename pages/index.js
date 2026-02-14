@@ -4,8 +4,8 @@ export default function Home() {
   return (
     <div style={{ 
       minHeight: '100vh', 
-      background: '#0a0a0a', 
-      color: '#fff',
+      background: '#fafafa', 
+      color: '#1a1a1a',
       fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
       lineHeight: '1.6'
     }}>
@@ -13,12 +13,12 @@ export default function Home() {
       <section style={{ 
         padding: '8rem 2rem 6rem',
         textAlign: 'center',
-        background: 'radial-gradient(ellipse at top, #1a1a2e 0%, #0a0a0a 70%)'
+        background: '#ffffff'
       }}>
         <div style={{ maxWidth: '800px', margin: '0 auto' }}>
           <div style={{ 
             fontSize: '1rem', 
-            color: '#4ecdc4', 
+            color: '#0066cc', 
             marginBottom: '1rem',
             fontWeight: '600',
             letterSpacing: '0.1em',
@@ -33,17 +33,13 @@ export default function Home() {
             lineHeight: '1.1'
           }}>
             The HTML Sandbox for{' '}
-            <span style={{ 
-              background: 'linear-gradient(135deg, #4ecdc4, #ff6b6b)',
-              WebkitBackgroundClip: 'text',
-              WebkitTextFillColor: 'transparent'
-            }}>
+            <span style={{ color: '#0066cc' }}>
               Autonomous Agents
             </span>
           </h1>
           <p style={{ 
             fontSize: '1.25rem', 
-            color: '#888', 
+            color: '#666666', 
             maxWidth: '600px', 
             margin: '0 auto 2.5rem'
           }}>
@@ -53,23 +49,23 @@ export default function Home() {
           <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
             <a href="/signup" style={{ 
               padding: '1rem 2rem', 
-              background: '#4ecdc4', 
+              background: '#0066cc', 
               borderRadius: '8px',
               textDecoration: 'none',
-              color: '#0a0a0a',
+              color: '#ffffff',
               fontWeight: '700',
               fontSize: '1rem',
-              transition: 'transform 0.2s'
+              transition: 'background 0.2s'
             }}>
               Get API Key →
             </a>
             <a href="#docs" style={{ 
               padding: '1rem 2rem', 
               background: 'transparent', 
-              border: '1px solid #333',
+              border: '1px solid #cccccc',
               borderRadius: '8px',
               textDecoration: 'none',
-              color: '#888',
+              color: '#666666',
               fontWeight: '600',
               fontSize: '1rem',
               transition: 'border-color 0.2s'
@@ -81,15 +77,16 @@ export default function Home() {
       </section>
 
       {/* Code Example */}
-      <section style={{ padding: '4rem 2rem', background: '#0d0d0d' }}>
+      <section style={{ padding: '4rem 2rem', background: '#f0f0f0' }}>
         <div style={{ maxWidth: '900px', margin: '0 auto' }}>
           <pre style={{ 
-            background: '#1a1a2e', 
+            background: '#1e1e1e', 
+            color: '#d4d4d4',
             padding: '2rem', 
             borderRadius: '16px',
             overflow: 'auto',
             fontSize: '0.875rem',
-            border: '1px solid #2a2a3e'
+            border: '1px solid #e0e0e0'
           }}>
 {`# 1. Get your JWT
 curl -X POST https://zenbin.org/api/auth/token \\
@@ -109,7 +106,7 @@ curl -X POST https://zenbin.org/v1/pages/demo \\
       </section>
 
       {/* Features */}
-      <section style={{ padding: '6rem 2rem' }}>
+      <section style={{ padding: '6rem 2rem', background: '#ffffff' }}>
         <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
           <h2 style={{ 
             fontSize: '2rem', 
@@ -157,16 +154,16 @@ curl -X POST https://zenbin.org/v1/pages/demo \\
               }
             ].map((f, i) => (
               <div key={i} style={{ 
-                background: '#1a1a2e', 
+                background: '#f8f8f8', 
                 padding: '2rem', 
                 borderRadius: '12px',
-                border: '1px solid #2a2a3e'
+                border: '1px solid #e8e8e8'
               }}>
                 <div style={{ fontSize: '2rem', marginBottom: '1rem' }}>{f.icon}</div>
                 <h3 style={{ fontSize: '1.25rem', fontWeight: '600', marginBottom: '0.5rem' }}>
                   {f.title}
                 </h3>
-                <p style={{ color: '#888', margin: 0 }}>{f.desc}</p>
+                <p style={{ color: '#666666', margin: 0 }}>{f.desc}</p>
               </div>
             ))}
           </div>
@@ -174,7 +171,7 @@ curl -X POST https://zenbin.org/v1/pages/demo \\
       </section>
 
       {/* Pricing */}
-      <section id="pricing" style={{ padding: '6rem 2rem', background: '#0d0d0d' }}>
+      <section id="pricing" style={{ padding: '6rem 2rem', background: '#f0f0f0' }}>
         <div style={{ maxWidth: '900px', margin: '0 auto' }}>
           <h2 style={{ 
             fontSize: '2rem', 
@@ -185,7 +182,7 @@ curl -X POST https://zenbin.org/v1/pages/demo \\
             Simple, transparent pricing
           </h2>
           <p style={{ 
-            color: '#888', 
+            color: '#666666', 
             textAlign: 'center',
             marginBottom: '3rem'
           }}>
@@ -199,17 +196,17 @@ curl -X POST https://zenbin.org/v1/pages/demo \\
           }}>
             {/* Free */}
             <div style={{ 
-              background: '#1a1a2e', 
+              background: '#ffffff', 
               borderRadius: '16px', 
               padding: '2rem',
-              border: '1px solid #333'
+              border: '1px solid #e0e0e0'
             }}>
               <h3 style={{ fontSize: '1.5rem', marginBottom: '0.5rem' }}>Free</h3>
               <div style={{ fontSize: '3rem', fontWeight: '800', marginBottom: '0.5rem' }}>
-                $0<span style={{ fontSize: '1rem', color: '#888', fontWeight: '400' }}>/mo</span>
+                $0<span style={{ fontSize: '1rem', color: '#666666', fontWeight: '400' }}>/mo</span>
               </div>
-              <p style={{ color: '#888', marginBottom: '1.5rem' }}>For testing & prototypes</p>
-              <ul style={{ color: '#aaa', listStyle: 'none', padding: 0, marginBottom: '2rem' }}>
+              <p style={{ color: '#666666', marginBottom: '1.5rem' }}>For testing & prototypes</p>
+              <ul style={{ color: '#444444', listStyle: 'none', padding: 0, marginBottom: '2rem' }}>
                 <li style={{ padding: '0.5rem 0' }}>✓ 10 requests/month</li>
                 <li style={{ padding: '0.5rem 0' }}>✓ Public pages</li>
                 <li style={{ padding: '0.5rem 0' }}>✓ Sandbox rendering</li>
@@ -217,10 +214,10 @@ curl -X POST https://zenbin.org/v1/pages/demo \\
               <a href="/signup" style={{ 
                 display: 'block', 
                 padding: '1rem', 
-                background: '#333', 
+                background: '#e0e0e0', 
                 borderRadius: '8px',
                 textDecoration: 'none',
-                color: '#fff',
+                color: '#1a1a1a',
                 textAlign: 'center',
                 fontWeight: '600'
               }}>Start Free</a>
@@ -228,15 +225,15 @@ curl -X POST https://zenbin.org/v1/pages/demo \\
 
             {/* Hobby */}
             <div style={{ 
-              background: 'linear-gradient(180deg, #1f2a3e 0%, #1a1a2e 100%)', 
+              background: '#ffffff', 
               borderRadius: '16px', 
               padding: '2rem',
-              border: '1px solid #4ecdc4'
+              border: '2px solid #0066cc'
             }}>
               <div style={{ 
                 display: 'inline-block',
-                background: '#4ecdc4',
-                color: '#0a0a0a',
+                background: '#0066cc',
+                color: '#ffffff',
                 padding: '0.25rem 0.75rem',
                 borderRadius: '20px',
                 fontSize: '0.75rem',
@@ -247,10 +244,10 @@ curl -X POST https://zenbin.org/v1/pages/demo \\
               </div>
               <h3 style={{ fontSize: '1.5rem', marginBottom: '0.5rem' }}>Hobby</h3>
               <div style={{ fontSize: '3rem', fontWeight: '800', marginBottom: '0.5rem' }}>
-                $5<span style={{ fontSize: '1rem', color: '#888', fontWeight: '400' }}>/mo</span>
+                $5<span style={{ fontSize: '1rem', color: '#666666', fontWeight: '400' }}>/mo</span>
               </div>
-              <p style={{ color: '#888', marginBottom: '1.5rem' }}>For side projects</p>
-              <ul style={{ color: '#aaa', listStyle: 'none', padding: 0, marginBottom: '2rem' }}>
+              <p style={{ color: '#666666', marginBottom: '1.5rem' }}>For side projects</p>
+              <ul style={{ color: '#444444', listStyle: 'none', padding: 0, marginBottom: '2rem' }}>
                 <li style={{ padding: '0.5rem 0' }}>✓ 1,000 requests/month</li>
                 <li style={{ padding: '0.5rem 0' }}>✓ Private pages</li>
                 <li style={{ padding: '0.5rem 0' }}>✓ Password protection</li>
@@ -259,10 +256,10 @@ curl -X POST https://zenbin.org/v1/pages/demo \\
               <a href="/signup?plan=hobby" style={{ 
                 display: 'block', 
                 padding: '1rem', 
-                background: '#4ecdc4', 
+                background: '#0066cc', 
                 borderRadius: '8px',
                 textDecoration: 'none',
-                color: '#0a0a0a',
+                color: '#ffffff',
                 textAlign: 'center',
                 fontWeight: '700'
               }}>Start Hobby</a>
@@ -270,17 +267,17 @@ curl -X POST https://zenbin.org/v1/pages/demo \\
 
             {/* Pro */}
             <div style={{ 
-              background: '#1a1a2e', 
+              background: '#ffffff', 
               borderRadius: '16px', 
               padding: '2rem',
-              border: '1px solid #333'
+              border: '1px solid #e0e0e0'
             }}>
               <h3 style={{ fontSize: '1.5rem', marginBottom: '0.5rem' }}>Pro</h3>
               <div style={{ fontSize: '3rem', fontWeight: '800', marginBottom: '0.5rem' }}>
-                $15<span style={{ fontSize: '1rem', color: '#888', fontWeight: '400' }}>/mo</span>
+                $15<span style={{ fontSize: '1rem', color: '#666666', fontWeight: '400' }}>/mo</span>
               </div>
-              <p style={{ color: '#888', marginBottom: '1.5rem' }}>For growing products</p>
-              <ul style={{ color: '#aaa', listStyle: 'none', padding: 0, marginBottom: '2rem' }}>
+              <p style={{ color: '#666666', marginBottom: '1.5rem' }}>For growing products</p>
+              <ul style={{ color: '#444444', listStyle: 'none', padding: 0, marginBottom: '2rem' }}>
                 <li style={{ padding: '0.5rem 0' }}>✓ 10,000 requests/month</li>
                 <li style={{ padding: '0.5rem 0' }}>✓ Private pages</li>
                 <li style={{ padding: '0.5rem 0' }}>✓ Custom domains</li>
@@ -289,10 +286,10 @@ curl -X POST https://zenbin.org/v1/pages/demo \\
               <a href="/signup?plan=pro" style={{ 
                 display: 'block', 
                 padding: '1rem', 
-                background: '#333', 
+                background: '#e0e0e0', 
                 borderRadius: '8px',
                 textDecoration: 'none',
-                color: '#fff',
+                color: '#1a1a1a',
                 textAlign: 'center',
                 fontWeight: '600'
               }}>Start Pro</a>
@@ -305,10 +302,11 @@ curl -X POST https://zenbin.org/v1/pages/demo \\
       <footer style={{ 
         padding: '3rem 2rem', 
         textAlign: 'center', 
-        color: '#555',
-        borderTop: '1px solid #1a1a2e'
+        color: '#888888',
+        borderTop: '1px solid #e0e0e0',
+        background: '#ffffff'
       }}>
-        <p>© 2026 ZenBin — Built by <a href="https://hyper.io" style={{ color: '#4ecdc4' }}>hyper</a></p>
+        <p>© 2026 ZenBin — Built by <a href="https://hyper.io" style={{ color: '#0066cc' }}>hyper</a></p>
       </footer>
     </div>
   )
