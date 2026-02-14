@@ -1,0 +1,16 @@
+services:
+  - type: web
+    runtime: node
+    name: zenbin-portal
+    plan: starter
+    region: oregon
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    healthCheckPath: /
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: ZENBIN_JWT_SECRET
+        value: change-me-in-production
+      - key: NEXT_PUBLIC_ZENBIN_API_URL
+        value: https://zenbin.org
